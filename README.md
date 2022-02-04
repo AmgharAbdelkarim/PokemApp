@@ -6,7 +6,7 @@ this is PokemApp Developed using ReactJs
 
 # Project Architecture
 
-The project is written with ReactJs as a View framework.
+The project is written with typescript using ReactJs as a View framework.
 
 ## React Boilerplate
 
