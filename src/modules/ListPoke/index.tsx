@@ -6,7 +6,7 @@ import LoadingState from "components/LoadingState";
 import { ListPokesContainer } from "modules/ListPoke/styles";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { GET_POKEMON_REQUEST } from "store/constants";
+import { getPokemon } from "store/action";
 import { pokemonDataType, initialStateType } from "store/types";
 
 interface pokeStateType {
@@ -30,7 +30,7 @@ const ListPoke: React.FC = (): JSX.Element => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    dispatch({ type: GET_POKEMON_REQUEST });
+    dispatch(getPokemon());
   }, []);
 
   if (hasError) return <ErrorState />;

@@ -58,7 +58,7 @@ type getPokemonDetailsFailedType = {
 
 type pokemonDataType = pokeDataType[];
 
-type getPokemonDetailsPayloadType = number;
+type getPokemonDetailsPayloadType = string;
 
 export type {
   getPokemonType,

@@ -6,7 +6,7 @@ import LoadingState from "components/LoadingState";
 import { PokeDetailsContainer } from "modules/PokeDetails/styles";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { GET_POKEMON_DETAILS_REQUEST } from "store/constants";
+import { getPokemonDetails } from "store/action";
 import { initialStateType, pokeDetailType } from "store/types";
 
 interface pokeDetailsStateType {
@@ -31,8 +31,10 @@ const PokeDetails: React.FC = (): JSX.Element => {
   const { name } = params;
 
   useEffect(() => {
-    dispatch({ type: GET_POKEMON_DETAILS_REQUEST, payload: name });
-  }, []);
+    if (name) {
+      dispatch(getPokemonDetails(name));
+    }
+  }, [name]);
 
   if (hasError) return <ErrorState />;
   return (
