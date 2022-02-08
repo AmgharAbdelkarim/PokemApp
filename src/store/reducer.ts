@@ -1,4 +1,3 @@
-import { initialStateType } from "store/types";
 import { PokeActionType } from "store/action";
 import {
   GET_POKEMON_REQUEST,
@@ -8,6 +7,7 @@ import {
   GET_POKEMON_DETAILS_REQUEST,
   GET_POKEMON_DETAILS_FAILED,
 } from "store/constants";
+import { initialStateType } from "store/types";
 
 const initialState: initialStateType = {
   pokemon: [],

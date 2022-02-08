@@ -10,6 +10,7 @@ import {
   GET_POKEMON_REQUEST,
   GET_POKEMON_DETAILS_REQUEST,
 } from "store/constants";
+
 import { pokemonDataType } from "./types";
 
 export function* getPokemon() {

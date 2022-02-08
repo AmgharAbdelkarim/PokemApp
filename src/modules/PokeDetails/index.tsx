@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+
 import Card from "components/Card";
-import { useParams } from "react-router-dom";
+import ErrorState from "components/ErrorState";
 import LoadingState from "components/LoadingState";
 import { PokeDetailsContainer } from "modules/PokeDetails/styles";
-import ErrorState from "components/ErrorState";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
 import { GET_POKEMON_DETAILS_REQUEST } from "store/constants";
 import { initialStateType, pokeDetailType } from "store/types";
 

@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+
 import Box from "components/Box";
-import { ListPokesContainer } from "modules/ListPoke/styles";
-import { useNavigate } from "react-router-dom";
-import LoadingState from "components/LoadingState";
 import ErrorState from "components/ErrorState";
+import LoadingState from "components/LoadingState";
+import { ListPokesContainer } from "modules/ListPoke/styles";
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { GET_POKEMON_REQUEST } from "store/constants";
 import { pokemonDataType, initialStateType } from "store/types";
 

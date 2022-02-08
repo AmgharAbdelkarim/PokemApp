@@ -1,4 +1,5 @@
 import React from "react";
+
 import { CardContainer } from "components/Card/styles";
 import { pokeDetailType } from "store/types";
 

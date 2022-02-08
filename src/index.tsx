@@ -1,10 +1,13 @@
 import React from "react";
+
 import ReactDOM from "react-dom";
+
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import ConfigureStore from "store";
+
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 const store = ConfigureStore();
 
